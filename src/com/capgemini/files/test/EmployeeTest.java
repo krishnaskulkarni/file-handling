@@ -1,6 +1,5 @@
 package com.capgemini.files.test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.FileInputStream;
@@ -28,6 +27,7 @@ public class EmployeeTest {
 	     
 	     ObjectInputStream is = new ObjectInputStream(new FileInputStream("test.ser"));
 	     Employee employee2 = (Employee)is.readObject();
+	     is.close();
 	     
 	     assertTrue(employee.equals(employee2));
 	}

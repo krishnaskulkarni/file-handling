@@ -53,4 +53,13 @@ public class DebitCard {
 		this.expiryYear = expiryYear;
 	}
 
+	@Override
+	public String toString() {
+		return "DebitCard [cardNumber=" + cardNumber + ", cvv=" + cvv + ", expiryMonth=" + expiryMonth + ", expiryYear="
+				+ expiryYear + "]";
+	}
+
+	
+
+
 }

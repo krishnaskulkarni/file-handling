@@ -6,16 +6,15 @@ import java.io.IOException;
 
 public class LineCount{
 
-	public int numberOfLines() throws IOException {
+	public int numberOfLines(BufferedReader breader) throws IOException {
 	int count = 0;
-	FileReader reader = new FileReader("C:\\krishna\\CORE JAVA\\Java_Assignments\\Assignments\\aaa.java");
-	BufferedReader breader = new BufferedReader(reader);
+	
 
 	while(breader.readLine()!=null)
 	{
 		count++;
 	}
-	reader.close();
+	
 	breader.close();
 	return count;
 	}
